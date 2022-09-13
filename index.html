@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ROOMMATE</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:ital@1&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@500&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body onload="myFunction()" style="margin: 0">
+    <div id="loading_outer">
+      <div class="loader-svg">
+        <div class="top">
+          <svg width="75px" height="75px" viewBox="-4 -1 38 28">
+            <polygon
+              fill="transparent"
+              stroke="#5D2BFF"
+              stroke-width="2"
+              points="15,0 30,30 0,30"
+            ></polygon>
+          </svg>
+        </div>
+        <div class="mid">
+          <svg width="150px" height="150px" viewBox="-4 -1 38 28">
+            <polygon
+              fill="transparent"
+              stroke="#5D2BFF"
+              stroke-width="2"
+              points="15,0 30,30 0,30"
+            ></polygon>
+          </svg>
+        </div>
+        <div class="bot">
+          <svg width="75px" height="75px" viewBox="-4 -1 38 28">
+            <polygon
+              fill="transparent"
+              stroke="#5D2BFF"
+              stroke-width="2"
+              points="15,0 30,30 0,30"
+            ></polygon>
+          </svg>
+        </div>
+      </div>
+      <div class="loader-text">Rpair<span>...</span></div>
+    </div>
+
+    <div id="loginss" style="display: none">
+      <a href="#"><button id="Create">Create Account</button></a>
+      <a href="./login.html"><button id="login">Log In</button></a>
+    </div>
+    <script>
+      var myVar;
+
+      function myFunction() {
+        myVar = setTimeout(showPage, 2000);
+      }
+
+      function showPage() {
+        document.getElementById("loading_outer").style.display = "none";
+        document.getElementById("loginss").style.display = "block";
+      }
+    </script>
+  </body>
+</html>

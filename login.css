@@ -1,0 +1,61 @@
+body{
+    background-color: #E4E4FF;
+    font-family: 'Lato', sans-serif;
+   
+}
+.login{
+    max-width: 20%;
+    margin-top: 40vh;
+    margin-left: 38vw;
+    display: grid;
+    gap: 10px;
+}
+@media (max-width:440px) {
+    .login{
+        margin-top: 40vh;
+        margin-left: 10vw;
+    }
+}
+.mail, .passwordd{
+    padding: 20px;
+    border-radius: 10px;
+    height: 4px;
+    font-size: 15px;
+    font-weight: 400;
+    background-color: transparent;
+    width: 280px;
+}
+@media (max-width:440px) {
+    .mail, .passwordd{
+     font-size: 20px;
+    
+    }
+}
+#enter{
+    background-color: #5D2BFF;
+    padding: 20px;
+    border-radius: 10px;
+    line-height: 2px;
+    height: 4px;
+    font-size: 17px;
+    font-weight: 500;
+    width: 327px;
+    color: white;
+}
+@media (max-width:440px) {
+    #enter{
+        width: 325px;
+
+    
+    }
+}
+
+button{
+    background-color: transparent;
+    border-color: transparent;
+}
+.buttons{
+    display: flex;
+    margin-left: 3vw;
+   
+}
